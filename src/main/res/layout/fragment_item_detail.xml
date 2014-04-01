@@ -1,9 +1,55 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/item_detail"
-    style="?android:attr/textAppearanceLarge"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:textIsSelectable="true"
-    tools:context="com.jsapps.ew.app.ItemDetailFragment" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1"
+    android:background="#7cb4e9">
+
+    <TextView
+        android:layout_width="396dp"
+        android:layout_height="28dp"
+        android:text="New Text"
+        android:id="@+id/item_detail"
+        android:height="50dp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2dcfc0"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:id="@+id/calendarView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#f3ffea"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:showWeekNumber="false"
+            android:focusable="true"
+            android:layout_marginBottom="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e4ffef"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+</LinearLayout>
